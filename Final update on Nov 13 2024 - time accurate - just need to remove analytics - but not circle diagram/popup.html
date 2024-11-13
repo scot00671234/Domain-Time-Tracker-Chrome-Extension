@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site Time Tracker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Site Time Tracker</h1>
+      <div class="header-buttons">
+        <button id="analyticsBtn" class="analytics-button">Analytics</button>
+        <button id="resetBtn" class="reset-button">Reset Data</button>
+      </div>
+    </div>
+    <div id="mainView" class="stats-container">
+      <div class="chart-section">
+        <div id="visualChart" class="chart-container"></div>
+        <div id="chartLegend" class="chart-legend"></div>
+      </div>
+      <div class="today-stats">
+        <h2>Today's Activity</h2>
+        <div id="todayStats" class="stats-list"></div>
+      </div>
+      <div class="all-time-stats">
+        <h2>All Time</h2>
+        <div id="allTimeStats" class="stats-list"></div>
+      </div>
+    </div>
+    <div id="analyticsView" class="analytics-container hidden">
+      <div class="analytics-header">
+        <h2>Detailed Analytics</h2>
+        <button id="backBtn" class="back-button">Back</button>
+      </div>
+      <div class="date-range">
+        <input type="date" id="startDate" class="date-input">
+        <span>to</span>
+        <input type="date" id="endDate" class="date-input">
+        <button id="applyRange" class="apply-button">Apply</button>
+      </div>
+      <div class="analytics-grid">
+        <div class="analytics-section">
+          <h3>Daily Activity</h3>
+          <div id="analyticsChart" class="analytics-chart"></div>
+        </div>
+        <div class="analytics-section">
+          <h3>Domain Distribution</h3>
+          <div id="domainChart" class="domain-chart"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
