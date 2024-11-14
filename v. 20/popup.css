@@ -1,0 +1,75 @@
+body {
+  width: 380px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #ffffff;
+  color: #111827;
+}
+
+.container {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  margin: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.header {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: white;
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at top right, rgba(255,255,255,0.15) 0%, transparent 60%),
+    linear-gradient(45deg, rgba(59,130,246,0.15) 0%, transparent 40%);
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  right: 15%;
+  height: 1px;
+  background: linear-gradient(to right, 
+    transparent, 
+    rgba(59,130,246,0.3) 20%, 
+    rgba(59,130,246,0.3) 80%, 
+    transparent
+  );
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+h1 svg {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  color: #60a5fa;
+}
+
+/* Rest of the CSS remains unchanged */

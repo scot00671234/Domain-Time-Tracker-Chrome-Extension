@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site Time Tracker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Time Tracker</h1>
+      <button id="resetBtn" class="reset-button">Reset</button>
+    </div>
+    <div class="stats-container">
+      <div class="chart-section">
+        <div id="visualChart" class="chart-container"></div>
+        <div id="chartLegend" class="chart-legend"></div>
+      </div>
+      <div class="today-stats">
+        <h2>Today's Activity</h2>
+        <div id="todayStats" class="stats-list"></div>
+      </div>
+      <div class="all-time-stats">
+        <h2>All Time</h2>
+        <div id="allTimeStats" class="stats-list"></div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
